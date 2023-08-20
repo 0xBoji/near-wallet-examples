@@ -5,13 +5,13 @@ import styled from "styled-components";
 export const Layout = styled.div`
   width: 100vw;
 
-  padding: 250px 0px 50px 0px;
+  padding: 0px 0px 50px 0px;
 
   display: flex;
   justify-content: center;
 
   @media screen and (max-width: 1250px) {
-    padding: 200px 0px 50px 0px;
+    padding: 0px 0px 50px 0px;
   }
 
   @media screen and (max-width: 575px) {

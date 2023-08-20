@@ -8,17 +8,17 @@ import {
   Title,
   Des,
   Detail,
-  Name,
+  Follower,
   Icons,
   Icon,
-} from "./TeamItem.styled";
+} from "./SpaceItem.styled";
 
 // @type
 type Props = {
   image: any;
-  role: string;
+  title: string;
   description: string;
-  name: string;
+  follower: string;
   connect: { icon: any; link: string }[];
 };
 
@@ -30,10 +30,10 @@ const Container: React.FC<{ data: Props }> = ({ data }) => {
       <ImageLayout>
         <Image src={data.image} alt="No Image" layout="fill" />
       </ImageLayout>
-      <Title>{data.role}</Title>
+      <Title>{data.title}</Title>
       <Des>{data.description}</Des>
       <Detail>
-        <Name>{data.name}</Name>
+        <Follower>{data.follower}</Follower>
         <Icons>
           {data.connect.map((item, index) => (
             <Icon key={index} href={item.link}>

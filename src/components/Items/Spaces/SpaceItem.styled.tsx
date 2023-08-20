@@ -13,7 +13,7 @@ export const Layout = styled.div`
 
   padding: 20px;
 
-  background: #0f1826;
+  background: black;
 
   overflow: hidden;
 `;
@@ -73,7 +73,7 @@ export const Detail = styled.div`
     visibility: visible;
   }
 `;
-export const Name = styled.div`
+export const Follower = styled.div`
   font-size: 20px;
   color: white;
   font-weight: 600;

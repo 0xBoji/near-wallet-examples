@@ -53,7 +53,7 @@ export async function initContract() {
       viewMethods: ["nft_total_supply"],
 
       // Change methods can modify the state. But you don't receive the returned value when called.
-      changeMethods: ["nft_mint"],
+      changeMethods: ["nft_mit"],
     }
   );
 }

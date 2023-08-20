@@ -67,7 +67,7 @@ export const Button = styled.div`
   align-items: center;
 
   color: white;
-  background: #141d2c;
+  background: black;
   font-size: 20px;
 
   & > *:not(:last-child) {
@@ -80,7 +80,7 @@ export const Button = styled.div`
 
   :hover,
   :focus {
-    background: #f05a28;
+    background: #fffff;
   }
 
   ::before {
@@ -89,7 +89,7 @@ export const Button = styled.div`
     top: -10px;
     left: -10px;
     border: 10px solid transparent;
-    border-top-color: #020c1a;
+    border-top-color: black;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
   }
@@ -99,7 +99,7 @@ export const Button = styled.div`
     bottom: -10px;
     right: -10px;
     border: 10px solid transparent;
-    border-top-color: #020c1a;
+    border-top-color: black;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }

@@ -19,7 +19,7 @@ import {
 
 // @assets
 import LogoImage from "assets/png/Logo.png";
-import LogoBg from "assets/png/Logo-bg.png";
+import LogoBg from "assets/png/logo-bg.gif";
 import { BiMenu } from "react-icons/bi";
 
 // @component

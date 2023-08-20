@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Layout = styled.div`
   position: relative;
-
+  border-radius: 24px;
   width: 180px;
   height: 56px;
 
@@ -24,7 +24,8 @@ export const Layout = styled.div`
 
   :hover,
   :focus {
-    box-shadow: inset 180px 0 0 0 white;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 2); /* Darker shadow */
+    background: #ffffff; /* Background color change */
     color: #f05a28;
   }
 
@@ -34,8 +35,6 @@ export const Layout = styled.div`
     top: -10px;
     left: -10px;
     border: 10px solid transparent;
-    border-top-color: #020c1a;
-    -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
   }
 
@@ -45,8 +44,6 @@ export const Layout = styled.div`
     bottom: -10px;
     right: -10px;
     border: 10px solid transparent;
-    border-top-color: #020c1a;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 

@@ -8,61 +8,101 @@ import { TeamItem } from "components/Items";
 import Container from "components/Container/Container";
 
 // @assets
-import { GrAdd, CiCircleRemove } from "react-icons";
-import Image1 from "assets/png/skeleton-1.png";
-import Image2 from "assets/png/skeleton-2.png";
-import Image3 from "assets/png/skeleton-3.png";
-import Image4 from "assets/png/skeleton-4.png";
-import Image5 from "assets/png/skeleton-5.png";
-import Image6 from "assets/png/skeleton-6.png";
+import { FaPlus } from "react-icons/fa";
+import Image1 from "assets/png/img1.webp";
+import Image2 from "assets/png/uniswap.webp";
+import Image3 from "assets/png/pancakeswap.png";
+import Image4 from "assets/png/theopendao.webp";
+import Image5 from "assets/png/Edu.png";
+import Image6 from "assets/png/op.png";
 
-const TeamInfo = [
+const initialItemsToShow = 6; // Initial number of items to show
+const itemsToAdd = 6; // Number of items to add when "Load More" is clicked
+
+const Spaceinfo = [
   {
     image: Image1,
-    space: "Product Manager",
-    follower: "USA",
-    name: "Austin",
-    connect: [{ icon: GrAdd, link: "" }],
+    title: "DAO",
+    description: "DAO Arbitrum",
+    follower: "100,000 Followers",
+    connect: [{ icon: FaPlus, link: "#" }],
   },
   {
     image: Image3,
-    role: "Marketing & Team Lead",
-    description: "Nigeria",
-    name: "Joyce",
-    connect: [{ icon: GrAdd, link: "" }],
+    title: "Pancake Swap",
+    description: "Pancake Swap Community",
+    follower: "10,000 Followers",
+    connect: [{ icon: FaPlus, link: "#" }],
   },
   {
     image: Image2,
-    role: "Marketing & Digital Content",
-    description: "Nigeria",
-    name: "Jay",
-    connect: [{ icon: GrAdd, link: "" }],
+    title: "Uni Swap",
+    description: "Uni Swap Community",
+    follower: "70,000 Followers",
+    connect: [{ icon: FaPlus, link: "#" }],
   },
   {
     image: Image6,
-    role: "Senior Developer",
-    description: "Netherlands",
-    name: "Jordy",
-    connect: [
-      {
-        icon: CiCircleRemove,
-        link: "",
-      },
-    ],
+    title: "Optimism",
+    description: "Layer2",
+    follower: "20,000 Followers",
+    connect: [{ icon: FaPlus, link: "#"}],
   },
   {
     image: Image4,
-    role: "Music Producer",
-    description: "USA",
-    name: "Bodi",
-    connect: [{ icon: GrAdd, link: "" }],
+    title: "OpenSea",
+    description: "OpenSea marketplace",
+    follower: "50,000 Followers",
+    connect: [{ icon: FaPlus, link: "#" }],
   },
   {
     image: Image5,
-    role: "Graphic Designer & Artist",
-    description: "Philippines",
-    name: "Alech",
-    connect: [{ icon: GrAdd, link: "" }],
+    title: "EDU",
+    description: "Learn to earn",
+    follower: "10,000 Followers",
+    connect: [{ icon: FaPlus, link: "#" }],
+  },
+  {
+    image: Image5,
+    title: "EDU",
+    description: "Learn to earn",
+    follower: "10,000 Followers",
+    connect: [{ icon: FaPlus, link: "#" }],
+  },
+  {
+    image: Image5,
+    title: "EDU",
+    description: "Learn to earn",
+    follower: "10,000 Followers",
+    connect: [{ icon: FaPlus, link: "#" }],
+  },
+  {
+    image: Image5,
+    title: "EDU",
+    description: "Learn to earn",
+    follower: "10,000 Followers",
+    connect: [{ icon: FaPlus, link: "#" }],
+  },
+  {
+    image: Image5,
+    title: "EDU",
+    description: "Learn to earn",
+    follower: "10,000 Followers",
+    connect: [{ icon: FaPlus, link: "#" }],
+  },
+  {
+    image: Image5,
+    title: "EDU",
+    description: "Learn to earn",
+    follower: "10,000 Followers",
+    connect: [{ icon: FaPlus, link: "#" }],
+  },
+  {
+    image: Image5,
+    title: "EDU",
+    description: "Learn to earn",
+    follower: "10,000 Followers",
+    connect: [{ icon: FaPlus, link: "#" }],
   },
 ];
 // ----------------------------------------------------------
@@ -71,10 +111,10 @@ export default function index() {
   return (
     <Layout id="space">
       <Container>
-        <Title>Space</Title>
+        <Title>Spaces</Title>
 
         <MainLayout>
-          {TeamInfo.map((item, index) => (
+          {Spaceinfo.map((item, index) => (
             <ItemLayout key={index}>
               <TeamItem data={item} />
             </ItemLayout>
