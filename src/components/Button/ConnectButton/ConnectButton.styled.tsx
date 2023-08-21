@@ -8,9 +8,9 @@ export const Layout = styled.div`
   width: 180px;
   height: 56px;
 
-  background: #f05a28;
+  background: #7efefe;
 
-  color: white;
+  color: black;
   font-weight: 600;
   font-size: 18px;
 
@@ -24,9 +24,9 @@ export const Layout = styled.div`
 
   :hover,
   :focus {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 2); /* Darker shadow */
-    background: #ffffff; /* Background color change */
-    color: #f05a28;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 2); 
+    background: black; 
+    color: #7efefe;
   }
 
   ::before {

@@ -13,7 +13,7 @@ export const Layout = styled.div`
 
   padding: 20px;
 
-  background: black;
+  background: #7efefe;
 
   overflow: hidden;
 `;
@@ -32,7 +32,7 @@ export const Title = styled.div`
 
   margin-top: 20px;
 
-  color: white;
+  color: black;
   font-size: 20px;
   font-weight: 600;
 `;
@@ -75,14 +75,14 @@ export const Detail = styled.div`
 `;
 export const Follower = styled.div`
   font-size: 20px;
-  color: white;
+  color: black;
   font-weight: 600;
 `;
 
 export const Icons = styled.div`
   margin-top: 20px;
   display: flex;
-  color: white;
+  color: black;
 `;
 export const Icon = styled(Link)`
   cursor: pointer;

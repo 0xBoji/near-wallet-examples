@@ -13,7 +13,7 @@ export const Layout = styled.div`
   justify-content: center;
   align-items: center;
 
-  background: #969696;
+  background:   #969696;
 
   padding-top: 10px;
 
@@ -35,8 +35,8 @@ export const LogoContainer = styled.div<{ back: any; top: boolean }>`
 
   position: relative;
 
-  width: 100px;
-  height: 75px;
+  width: 150px;
+  height: 90px;
 
   cursor: pointer;
 
@@ -91,7 +91,7 @@ export const MenuItem = styled.a`
   margin: 0 10px;
   z-index: 1;
 
-  color: #fff;
+  color: #7EFFFF; 
   font-size: 18px;
   font-weight: 500;
 
@@ -106,7 +106,7 @@ export const MenuItem = styled.a`
     position: absolute;
     content: "";
     height: 3px;
-    background-color: #f05a28;
+    background-color: black;
     width: 100%;
     left: 0;
     bottom: -5px;
@@ -114,7 +114,7 @@ export const MenuItem = styled.a`
   }
 
   :hover {
-    color: #f05a28;
+    color: black;
     ::after {
       transform: scaleX(1);
     }
@@ -151,10 +151,10 @@ export const MenuButton = styled.div`
   height: 56px;
   margin-left: 10px;
 
-  background: #f05a28;
+  background: #7efefe;
   transition: all 0.2s ease-in-out;
 
-  color: white;
+  color: black;
   font-weight: 600;
   font-size: 18px;
 
@@ -166,8 +166,8 @@ export const MenuButton = styled.div`
 
   :hover,
   :focus {
-    box-shadow: inset 180px 0 0 0 white;
-    color: #f05a28;
+    box-shadow: inset 180px 0 0 0 #7efefe;
+    color: black;
   }
 
   ::before {
@@ -264,21 +264,21 @@ export const MobileMenuItem = styled.div`
   height: 64px;
   display: flex;
   align-items: center;
-  color: white;
+  color: black;
 
   cursor: pointer;
 
   padding: 20px;
   font-size: 16px;
-  background: #f05a28;
+  background: #7efefe;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
   transition: all 0.2s;
   font-size: 20px;
 
   :hover,
   :focus {
-    background: white;
-    color: #f05a28;
+    background: #7efefe;
+    color: #black;
   }
 
   &:first-child {

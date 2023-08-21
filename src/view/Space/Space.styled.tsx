@@ -43,7 +43,7 @@ export const Title = styled.div`
 
   font-size: 56px;
   font-weight: 800;
-  color: white;
+  color: black;
 
   margin-bottom: 50px;
 

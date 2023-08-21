@@ -36,7 +36,7 @@ export const Collection = styled.div`
 `;
 
 export const Text = styled.div`
-  color: white;
+  color: black;
   font-weight: 600;
   font-size: 56px;
   max-width: 870px;
@@ -66,8 +66,8 @@ export const Button = styled.div`
   justify-content: center;
   align-items: center;
 
-  color: white;
-  background: black;
+  color: black;
+  background: #7efefe;
   font-size: 20px;
 
   & > *:not(:last-child) {
@@ -89,7 +89,6 @@ export const Button = styled.div`
     top: -10px;
     left: -10px;
     border: 10px solid transparent;
-    border-top-color: black;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
   }
@@ -99,7 +98,6 @@ export const Button = styled.div`
     bottom: -10px;
     right: -10px;
     border: 10px solid transparent;
-    border-top-color: black;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }

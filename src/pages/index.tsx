@@ -9,7 +9,6 @@ const Home: NextPage = () => {
   return (
     <div>
       <Hero />
-  
       <Team />
     </div>
   );

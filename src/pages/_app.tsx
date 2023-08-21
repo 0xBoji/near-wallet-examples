@@ -8,9 +8,6 @@ import AppLayout from "Layout/AppLayout";
 // @components
 import Loading from "components/loading";
 
-// @context
-import { SupplyContext, useSupplyContext } from "context/SupplyContext";
-
 // @AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,7 +20,8 @@ import { initContract } from "near/utils";
 function MyApp({ Component, pageProps }: AppProps) {
   const [loaded, setLoaded] = useState(true);
   const [inited, setInited] = useState(false);
-  const [totalSupply, setTotalSupply] = useState(0);
+  const [isConnected, setIsConnected] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     window.nearInitPromise = initContract()
@@ -50,30 +48,41 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, []);
 
-  const getTotalSupply = useCallback(async () => {
-    const num = await window?.contract?.nft_total_supply();
-    setTotalSupply(num);
-    getTotalSupply();
-  }, []);
 
-  useEffect(() => {
-    getTotalSupply();
-  }, [getTotalSupply]);
+
+
+  const handleHover = () => {
+    if (isConnected) {
+      setIsHovered(!isHovered);
+    }
+  };
+
+  const handleConnectClick = () => {
+    setIsConnected(!isConnected);
+  };
 
   return (
-    <SupplyContext.Provider value={{ totalSupply }}>
+    <div
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHover}
+      onClick={handleConnectClick}
+    >
       {inited ? (
         loaded ? (
           <Loading />
         ) : (
           <AppLayout>
-            <Component {...pageProps} />
+            <Component
+              {...pageProps}
+              isConnected={isConnected}
+              isHovered={isHovered}
+            />
           </AppLayout>
         )
       ) : (
         <></>
       )}
-    </SupplyContext.Provider>
+    </div>
   );
 }
 

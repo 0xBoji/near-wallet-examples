@@ -1,1 +1,1 @@
-export { default as TeamItem } from "./Spaces/SpaceItem";
+export { default as Spaces } from "./Spaces/SpaceItem";

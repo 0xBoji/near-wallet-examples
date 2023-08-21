@@ -4,7 +4,7 @@ import React from "react";
 import { Layout, MainLayout, ItemLayout, Title } from "./Space.styled";
 
 // @component
-import { TeamItem } from "components/Items";
+import { Spaces } from "components/Items";
 import Container from "components/Container/Container";
 
 // @assets
@@ -16,8 +16,7 @@ import Image4 from "assets/png/theopendao.webp";
 import Image5 from "assets/png/Edu.png";
 import Image6 from "assets/png/op.png";
 
-const initialItemsToShow = 6; // Initial number of items to show
-const itemsToAdd = 6; // Number of items to add when "Load More" is clicked
+
 
 const Spaceinfo = [
   {
@@ -116,7 +115,7 @@ export default function index() {
         <MainLayout>
           {Spaceinfo.map((item, index) => (
             <ItemLayout key={index}>
-              <TeamItem data={item} />
+              <Spaces data={item} />
             </ItemLayout>
           ))}
         </MainLayout>
