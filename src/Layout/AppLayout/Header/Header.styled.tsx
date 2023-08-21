@@ -13,7 +13,7 @@ export const Layout = styled.div`
   justify-content: center;
   align-items: center;
 
-  background:   #969696;
+  background: #728a8a;
 
   padding-top: 10px;
 
@@ -91,7 +91,7 @@ export const MenuItem = styled.a`
   margin: 0 10px;
   z-index: 1;
 
-  color: #7EFFFF; 
+  color: black; 
   font-size: 18px;
   font-weight: 500;
 
@@ -114,8 +114,9 @@ export const MenuItem = styled.a`
   }
 
   :hover {
-    color: black;
+    color: #7efefe;
     ::after {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 10);
       transform: scaleX(1);
     }
   }

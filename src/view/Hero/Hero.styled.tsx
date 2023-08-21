@@ -58,9 +58,9 @@ export const Text = styled.div`
 
 export const Button = styled.div`
   position: relative;
-
+  border-radius:24px;
   transition: all 0.4s ease-in-out;
-
+  border: 2px solid;
   height: 56px;
   display: flex;
   justify-content: center;
@@ -80,7 +80,10 @@ export const Button = styled.div`
 
   :hover,
   :focus {
-    background: #fffff;
+    color:#7efefe;
+    background: black;
+    box-shadow: 0 16px 20px rgba(0, 0, 0, 8);
+
   }
 
   ::before {

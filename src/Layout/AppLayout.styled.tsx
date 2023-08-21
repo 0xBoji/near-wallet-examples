@@ -8,5 +8,5 @@ export const AppLayoutWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  background:#969696;
+  background:#98abab;
 `;

@@ -7,7 +7,7 @@ export const Layout = styled.div`
   border-radius: 24px;
   width: 180px;
   height: 56px;
-
+  border: 2px solid;
   background: #7efefe;
 
   color: black;

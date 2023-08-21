@@ -8,23 +8,31 @@ export const Layout = styled.div`
   width: 100%;
   max-width: 350px;
   height: 350px;
-
   border-radius: 20px;
-
   padding: 20px;
-
   background: #7efefe;
-
   overflow: hidden;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 8);
+  transition: box-shadow 0.4s ease-in-out;
+  :hover {
+    /* Increase shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
 `;
 export const ImageLayout = styled.div`
   position: relative;
+  border-radius: 20px;
 
   width: 100%;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid black;
+  border-radius: 14px;
+
+  transition: box-shadow 0.4s ease-in-out;
+
 `;
 export const Title = styled.div`
   width: 100%;
@@ -45,7 +53,16 @@ export const Des = styled.div`
   color: rgb(135, 141, 149);
   font-size: 15px;
 `;
+export const TP = styled.div`
+  width: 100%;
+  text-align: center;
 
+  margin-top: 20px;
+
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+`;
 export const Detail = styled.div`
   position: absolute;
   bottom: 0;
